@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ucapan Ultah Khansa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Halaman Landing -->
+  <section id="landing" class="page active">
+    <h1>🎉 Selamat Datang 🎉</h1>
+    <button onclick="goToForm()">Mulai</button>
+  </section>
+
+  <!-- Halaman Form Nama -->
+  <section id="form-page" class="page">
+    <h2>Masukkan Nama Kamu</h2>
+    <input type="text" id="guestName" placeholder="Nama Kamu..." />
+    <button onclick="showGreeting()">Lanjut</button>
+  </section>
+
+  <!-- Halaman Ucapan Ultah -->
+  <section id="greeting" class="page">
+    <h2 id="wishText"></h2>
+    <p id="fromText"></p>
+    <div class="slideshow">
+      <img src="img/foto1.jpg" class="slide active" alt="Foto 1"/>
+      <img src="img/foto2.jpg" class="slide" alt="Foto 2"/>
+      <img src="img/foto3.jpg" class="slide" alt="Foto 3"/>
+    </div>
+    <button onclick="toggleMusic()">🎵 Play/Pause Musik</button>
+  </section>
+
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
